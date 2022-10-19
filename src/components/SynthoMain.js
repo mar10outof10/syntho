@@ -1,6 +1,6 @@
 import React from 'react';
-import UserInterface from 'components/UserInterface';
-import SynthBeatContainer from 'components/SynthBeatContainer';
+import UserInterface from 'components/UserInterface/UserInterface';
+import SynthBeatContainer from 'components/SynthBeatContainer/SynthBeatContainer';
 
 const SynthoMain = () => {
   return (
