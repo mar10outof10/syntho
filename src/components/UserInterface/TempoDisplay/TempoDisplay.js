@@ -4,7 +4,11 @@ import "./TempoDisplay.scss";
 
 const TempoDisplay = () => {
   return (
-    <div className="tempoDisplay"></div>
+    <div className="tempoDisplay">
+      <div className="tempoDisplay__digital">
+        
+      </div>
+    </div>
   )
 }
 

@@ -8,7 +8,7 @@ import "./UserInterface.scss";
 const UserInterface = () => {
   return (
     <div className="userInterface">
-      <div className="userInterface__Container">
+      <div className="userInterface__container">
         <PlayButton/>
         <TempoDisplay/>
         <TrackList/>

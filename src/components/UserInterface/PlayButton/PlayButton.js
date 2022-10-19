@@ -4,7 +4,9 @@ import "./PlayButton.scss";
 
 const PlayButton = () => {
   return (
-    <div className="playButton"></div>
+    <div className="playButton">
+      PLAY! <div className="playButton__triangle"></div>
+    </div>
   )
 }
 
