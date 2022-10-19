@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./UserInterface.scss";
+
 const UserInterface = () => {
   return (
-    <div>
+    <div className="userInterface">
 
     </div>
   )
