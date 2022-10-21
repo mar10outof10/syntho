@@ -1,7 +1,7 @@
 import React from "react";
-import PlayButton from "./PlayButton/PlayButton";
-import TempoDisplay from "./TempoDisplay/TempoDisplay";
-import TrackList from "./TrackList/TrackList";
+import PlayButton from "./PlayButton";
+import TempoDisplay from "./TempoDisplay";
+import TrackList from "./TrackList";
 
 import "./UserInterface.scss";
 
