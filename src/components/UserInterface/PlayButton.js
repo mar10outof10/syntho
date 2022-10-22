@@ -1,11 +1,9 @@
 import React from "react";
 
-import "./PlayButton.scss";
-
 const PlayButton = () => {
   return (
     <div className="playButton">
-      PLAY! <div className="playButton__triangle"></div>
+      PLAY! <div className="playButton__triangle triangle-right"></div>
     </div>
   )
 }

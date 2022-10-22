@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.scss';
-import SynthoMain from 'components/SynthoMain'
+
+import SynthoMain from 'components/SynthoMain/SynthoMain'
 
 function App() {
   return (
