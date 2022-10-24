@@ -95,6 +95,22 @@ html {
   align-items: center;
 }
 
+.trackList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.trackList__track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+}
+
 .userInterface {
   display: flex;
   flex: 1;
