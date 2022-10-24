@@ -2,10 +2,28 @@
 
 import React from "react";
 
-const SynthBeat = () => {
-  <div>
+const LargeBeat = () => {
+  return (
+    <div className="synthBeat__large rounded-square"></div>
+  )
+}
 
-  </div>
+const SmallBeat = () => {
+  return (
+    <div className="synthBeat__small rounded-square"></div>
+  )
+}
+
+
+const SynthBeat = () => {
+  return (
+    <div className='synthBeat'>
+      <LargeBeat beat={1} />
+      <SmallBeat beat={2} />
+      <SmallBeat beat={3} />
+      <SmallBeat beat={4} />
+    </div>
+  )
 }
 
 export default SynthBeat;

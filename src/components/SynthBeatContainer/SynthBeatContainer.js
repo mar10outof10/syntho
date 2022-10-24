@@ -3,7 +3,12 @@ import SynthBeat from "components/SynthBeat/SynthBeat";
 
 const SynthBeatContainer = () => {
   return (
-    <div className="synthBeatContainer"></div>
+    <div className="synthBeatContainer">
+      <SynthBeat id={1} />
+      <SynthBeat id={2} />
+      <SynthBeat id={3} />
+      <SynthBeat id={4} />
+    </div>
   )
 }
 
