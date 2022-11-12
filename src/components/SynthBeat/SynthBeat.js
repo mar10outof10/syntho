@@ -14,14 +14,24 @@ const SmallBeat = () => {
   )
 }
 
+const SynthBeatOverlay = () => {
+  return (
+    <div className='synthBeat__overlay'>
+
+    </div>
+  )
+}
 
 const SynthBeat = () => {
   return (
     <div className='synthBeat'>
-      <LargeBeat beat={1} />
-      <SmallBeat beat={2} />
-      <SmallBeat beat={3} />
-      <SmallBeat beat={4} />
+      <SynthBeatOverlay />
+      <div className='synthBeat__beats'>
+        <LargeBeat beat={1} />
+        <SmallBeat beat={2} />
+        <SmallBeat beat={3} />
+        <SmallBeat beat={4} />
+      </div>
     </div>
   )
 }

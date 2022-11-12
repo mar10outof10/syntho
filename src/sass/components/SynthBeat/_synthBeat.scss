@@ -1,23 +1,49 @@
 .synthBeat {
-  width: 100%;
-  padding: 12px;
+
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
   gap: 15px;
 
+  &__beats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 15px;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.8);
+  }
+  
   &:not(:last-child) {
     border-right: 2px solid cyan;
   }
-
+  
   &__large {
     height: 80px;
     width: 80px;
   }
-
+  
   &__small {
     height: 50px;
     width: 50px;
   }
 }
+
+.synthBeat__container {
+  position: absolute;
+}
+
