@@ -1,7 +1,8 @@
 // two sizes, large for beats, small for 8th / 16th notes ets.
 
-import React from "react";
+import React, { useReducer } from "react";
 import NoteSelect from "./NoteSelect/NoteSelect"
+
 const LargeBeat = () => {
   return (
     <div className="synthBeat__large rounded-square"></div>
@@ -30,6 +31,33 @@ const SynthBeatOverlay = () => {
 }
 
 const SynthBeat = () => {
+  const beatReducer = (state, action) => {
+    switch (action.type) {
+      case "OPEN_OVERLAY":
+        return state;
+      case "CLOSE_OVERLAY":
+        return state;
+      case "SET_CURRENT_NOTE":
+        return state;
+      case "SET_SELECTED_NOTE":
+        return state;
+      case "SET_CURRENT_OCTAVE":
+        return state;
+      case "SET_SELECTED_OCTAVE":
+        return state;
+      default:
+        return state;
+    }
+  }
+  const [beatState, beatDispatch] = useReducer(beatReducer, {
+    "overlayOpen": false,
+    // "selectedNote": currentNote,
+    // "selectedOctave": currentOctave,
+    // "selectedDuration": currentDuration,
+    "selectedNote": 'A',
+    "selectedOctave": '3',
+    "selectedDuration": '8n',
+  })
   return (
     <div className='synthBeat'>
       <SynthBeatOverlay />
