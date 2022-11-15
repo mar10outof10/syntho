@@ -134,6 +134,7 @@ html {
   justify-content: space-around;
 }
 .noteSelect__octaveColumnItem {
+  padding: 2px;
   position: relative;
   display: flex;
   align-items: center;
@@ -142,11 +143,8 @@ html {
 .noteSelect__octaveColumnItem__current {
   color: goldenrod;
 }
-.noteSelect__octaveColumnItem__border {
-  position: absolute;
+.noteSelect__octaveColumnItem__selected {
   border: solid goldenrod 2px;
-  height: 100%;
-  width: 100%;
   border-radius: 5px;
 }
 

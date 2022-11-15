@@ -16,6 +16,7 @@
   }
   
   &__octaveColumnItem {
+    padding: 2px;
     position: relative;
     display: flex;
     align-items: center;
@@ -25,11 +26,8 @@
       color: goldenrod;
     }
 
-    &__border {
-      position: absolute;
+    &__selected {
       border: solid goldenrod 2px;
-      height: 100%;
-      width: 100%;
       border-radius: 5px;
     }
   }
