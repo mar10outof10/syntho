@@ -1,7 +1,7 @@
 // two sizes, large for beats, small for 8th / 16th notes ets.
 
 import React from "react";
-import NoteDropdown from "./NoteDropdown/NoteDropdown"
+import NoteSelect from "./NoteSelect/NoteSelect"
 const LargeBeat = () => {
   return (
     <div className="synthBeat__large rounded-square"></div>
@@ -21,7 +21,7 @@ const SynthBeatOverlay = () => {
   }
   return (
     <div className='synthBeat__overlay'>
-      <NoteDropdown />
+      <NoteSelect />
       <div className='synthBeat__overlay_options' style={tempStyles}>
 
       </div>
