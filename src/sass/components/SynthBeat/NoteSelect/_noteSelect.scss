@@ -8,4 +8,29 @@
   gap: 15px;
   background: linear-gradient(335deg, #8d6213, #302207);
   border: solid #3d2b09 3px;
+
+  &__octaveColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  &__octaveColumnItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__current {
+      color: goldenrod;
+    }
+
+    &__border {
+      position: absolute;
+      border: solid goldenrod 2px;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
 }

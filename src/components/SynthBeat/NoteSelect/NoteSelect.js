@@ -8,7 +8,7 @@ const currOctave = octaves[0];
 
 const NoteColumn = () => {
   return (
-    <div className="noteDropdown__noteColumn">
+    <div className="noteSelect__noteColumn">
       {notes.map((note, index) => (
         <div>
           {note}
@@ -20,12 +20,14 @@ const NoteColumn = () => {
 
 const OctaveColumn = () => {
   return (
-    <div className="noteDropdown__octaveColumn">
-      {octaves.map((octave, index) => (
-        <div>
-          {octave}
-        </div>
-      ))}
+    <div className="noteSelect__octaveColumn">
+      {octaves.map((octave, index) => {
+        return (
+          <div className="noteSelect__octaveColumnItem">
+            {octave}
+          </div>
+        )
+      })}
     </div>
   );
 };

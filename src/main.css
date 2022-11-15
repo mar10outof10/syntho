@@ -128,6 +128,27 @@ html {
   background: linear-gradient(335deg, #8d6213, #302207);
   border: solid #3d2b09 3px;
 }
+.noteSelect__octaveColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.noteSelect__octaveColumnItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noteSelect__octaveColumnItem__current {
+  color: goldenrod;
+}
+.noteSelect__octaveColumnItem__border {
+  position: absolute;
+  border: solid goldenrod 2px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
 
 .synthBeatContainer {
   width: 100%;
