@@ -15,14 +15,14 @@ const SmallBeat = () => {
   )
 }
 
-const SynthBeatOverlay = () => {
+const SynthBeatOverlay = ({beatState, beatDispatch}) => {
   const tempStyles = {
     'height': '100%',
     'width': '100%',
   }
   return (
     <div className='synthBeat__overlay'>
-      <NoteSelect />
+      <NoteSelect beatState={beatState} beatDispatch={beatDispatch} />
       <div className='synthBeat__overlay_options' style={tempStyles}>
 
       </div>
@@ -32,6 +32,7 @@ const SynthBeatOverlay = () => {
 
 const SynthBeat = () => {
   const beatReducer = (state, action) => {
+    console.log(state, action);
     switch (action.type) {
       case "OPEN_OVERLAY":
         return state;
@@ -40,11 +41,11 @@ const SynthBeat = () => {
       case "SET_CURRENT_NOTE":
         return state;
       case "SET_SELECTED_NOTE":
-        return state;
+        return {...state, selectedNote: action.payload.note};
       case "SET_CURRENT_OCTAVE":
         return state;
       case "SET_SELECTED_OCTAVE":
-        return state;
+        return {...state, selectedOctave: action.payload.octave};
       default:
         return state;
     }
@@ -60,7 +61,7 @@ const SynthBeat = () => {
   })
   return (
     <div className='synthBeat'>
-      <SynthBeatOverlay />
+      <SynthBeatOverlay beatState={beatState} beatDispatch={beatDispatch} />
       <div className='synthBeat__beats'>
         <LargeBeat beat={1} />
         <SmallBeat beat={2} />
