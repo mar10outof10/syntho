@@ -161,9 +161,34 @@ html {
 
 .clearButton {
   flex: 3;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border-color: maroon;
   background: rgb(98, 3, 3);
 }
+.clearButton__disabled {
+  display: flex;
+  justify-content: center;
+}
+.clearButton__text {
+  flex: 7;
+  display: flex;
+  justify-content: flex-end;
+  color: steelblue;
+}
+.clearButton__checkboxContainer {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5%;
+}
+.clearButton__checkbox {
+  flex: 1;
+}
+
 .noteSelect {
   display: flex;
   flex-direction: row;

@@ -21,8 +21,11 @@ const ClearButton = ({beatState, beatDispatch}) => {
   return (
     <div className='clearButton synthBeatOverlay__button'>
       <div className='clearButton__text'>
+        CLEAR
       </div>
-      <div className='clearButton__checkBox'>
+      <div className='clearButton__checkboxContainer'>
+        <input type="checkbox" className='clearButton__checkbox'>
+        </input>
       </div>
     </div>
   )

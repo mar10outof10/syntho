@@ -48,18 +48,35 @@
 
 .clearButton {
   flex: 3;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border-color: maroon;
   background: rgb(98, 3, 3);
 
   &__disabled {
+    display: flex;
+    justify-content: center;
     
   }
 
   &__text {
-    
+    flex: 7;
+    display: flex;
+    justify-content: flex-end;
+    color: steelblue;
   }
 
-  &__checkBox {
+  &__checkboxContainer {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5%;
+  }
 
+  &__checkbox {
+    flex: 1;
   }
 }
