@@ -4,7 +4,7 @@ import NoteSelect from './NoteSelect';
 const ConfirmButton = ({beatState, beatDispatch}) => {
   return (
     <div className='synthBeatOverlay__button confirmButton'>
-
+      &#9989;
     </div>
   )
 }
@@ -12,7 +12,7 @@ const ConfirmButton = ({beatState, beatDispatch}) => {
 const CancelButton = ({beatState, beatDispatch}) => {
   return (
     <div className='synthBeatOverlay__button cancelButton'>
-
+      &#10060;
     </div>
   )
 }
@@ -21,10 +21,8 @@ const ClearButton = ({beatState, beatDispatch}) => {
   return (
     <div className='clearButton__container'>
       <div className='clearButton__text'>
-        
       </div>
       <div className='clearButton__checkBox'>
-
       </div>
     </div>
   )
