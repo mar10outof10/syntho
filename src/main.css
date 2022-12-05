@@ -125,7 +125,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
 .synthBeatOverlay__options {
   height: 100%;
