@@ -1,7 +1,7 @@
 // two sizes, large for beats, small for 8th / 16th notes ets.
 
 import React, { useReducer } from "react";
-import NoteSelect from "./NoteSelect/NoteSelect"
+import SynthBeatOverlay from "./SynthBeatOverlay/SynthBeatOverlay";
 
 const LargeBeat = () => {
   return (
@@ -15,20 +15,6 @@ const SmallBeat = () => {
   )
 }
 
-const SynthBeatOverlay = ({beatState, beatDispatch}) => {
-  const tempStyles = {
-    'height': '100%',
-    'width': '100%',
-  }
-  return (
-    <div className='synthBeat__overlay'>
-      <NoteSelect beatState={beatState} beatDispatch={beatDispatch} />
-      <div className='synthBeat__overlay_options' style={tempStyles}>
-
-      </div>
-    </div>
-  )
-}
 
 const SynthBeat = () => {
   const beatReducer = (state, action) => {
