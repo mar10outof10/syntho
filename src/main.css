@@ -130,6 +130,33 @@ html {
 .synthBeatOverlay__options {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.synthBeatOverlay__buttonRow {
+  display: flex;
+  flex: 2;
+}
+.synthBeatOverlay__durationSelect {
+  flex: 6;
+}
+.synthBeatOverlay__button {
+  border: outset 4px;
+  flex: 1;
+}
+.synthBeatOverlay__button:active {
+  border-style: inset;
+}
+
+.confirmButton {
+  border-color: green;
+  background: darkgreen;
+}
+
+.cancelButton {
+  width: 100%;
+  border-color: maroon;
+  background: rgb(98, 3, 3);
 }
 
 .noteSelect {

@@ -11,5 +11,51 @@
   &__options {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__buttonRow {
+    display: flex;
+    flex: 2;
+  }
+
+  &__durationSelect {
+    flex: 6;
+  }
+
+  &__button {
+    border: outset 4px;
+    flex: 1;
+
+    &:active {
+      border-style: inset;
+    }
+  }
+}
+
+.confirmButton {
+
+  border-color: green;
+  background: darkgreen;
+}
+
+.cancelButton{
+  width: 100%;
+  border-color: maroon;
+  background: rgb(98, 3, 3)
+}
+
+.clearButton {
+  &__container{
+
+  }
+
+  &__text {
+    
+  }
+
+  &__checkBox {
+
   }
 }

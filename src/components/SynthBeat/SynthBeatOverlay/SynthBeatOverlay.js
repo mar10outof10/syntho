@@ -30,21 +30,20 @@ const ClearButton = ({beatState, beatDispatch}) => {
   )
 }
 
-const SynthBeatOverlay = ({beatState, beatDispatch}) => {
+const SynthBeatOverlay = ({ beatState, beatDispatch }) => {
   return (
-    <div className='synthBeatOverlay'>
+    <div className="synthBeatOverlay">
       <NoteSelect beatState={beatState} beatDispatch={beatDispatch} />
-      <div className='synthBeatOverlay__options'>
-        <div classname='synthBeatOverlay__buttonRow'>
-          
+      <div className="synthBeatOverlay__options">
+        <div className="synthBeatOverlay__buttonRow">
+          <ConfirmButton />
+          <CancelButton />
         </div>
-        <div classname='synthBeatOverlay__durationSelect'>
-
-        </div>
-
+        <div className="synthBeatOverlay__durationSelect"></div>
+        <ClearButton />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default SynthBeatOverlay;
