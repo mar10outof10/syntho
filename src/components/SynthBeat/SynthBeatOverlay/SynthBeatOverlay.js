@@ -31,6 +31,25 @@ const ClearButton = ({beatState, beatDispatch}) => {
   )
 }
 
+const DurationSelect = ({beatState, beatDispatch}) => {
+  return (
+    <div className='durationSelect'>
+      <div className='durationSelect__button durationSelect__eigthNote synthBeatOverlay__button'>
+        8
+      </div>
+      <div className='durationSelect__button durationSelect__button__active durationSelect__quarterNote synthBeatOverlay__button'>
+        4
+      </div>
+      <div className='durationSelect__button durationSelect__halfNote synthBeatOverlay__button'>
+        2
+      </div>
+      <div className='durationSelect__button durationSelect__wholeNote synthBeatOverlay__button'>
+        1
+      </div>
+    </div>
+  )
+}
+
 const SynthBeatOverlay = ({ beatState, beatDispatch }) => {
   return (
     <div className="synthBeatOverlay">
@@ -40,7 +59,7 @@ const SynthBeatOverlay = ({ beatState, beatDispatch }) => {
           <ConfirmButton />
           <CancelButton />
         </div>
-        <div className="synthBeatOverlay__durationSelect"></div>
+        <DurationSelect />
         <ClearButton />
       </div>
     </div>

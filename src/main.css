@@ -159,6 +159,26 @@ html {
   background: rgb(103, 103, 103);
 }
 
+.durationSelect {
+  flex: 7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.durationSelect__button {
+  border: grey outset 4px;
+  background: black;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.durationSelect__button__active {
+  border-style: inset;
+  background: rgb(90, 90, 90);
+  color: white;
+}
+
 .clearButton {
   flex: 3;
   gap: 5px;
