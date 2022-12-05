@@ -42,12 +42,14 @@
 
 .cancelButton{
   width: 100%;
-  border-color: maroon;
-  background: rgb(98, 3, 3)
+  border-color: lightgray;
+  background: rgb(103, 103, 103);
 }
 
 .clearButton {
   flex: 3;
+  border-color: maroon;
+  background: rgb(98, 3, 3);
 
   &__disabled {
     
