@@ -47,8 +47,10 @@
 }
 
 .clearButton {
-  &__container{
+  flex: 3;
 
+  &__disabled {
+    
   }
 
   &__text {

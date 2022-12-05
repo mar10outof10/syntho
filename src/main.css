@@ -159,6 +159,9 @@ html {
   background: rgb(98, 3, 3);
 }
 
+.clearButton {
+  flex: 3;
+}
 .noteSelect {
   display: flex;
   flex-direction: row;

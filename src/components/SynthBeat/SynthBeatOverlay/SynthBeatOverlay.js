@@ -19,7 +19,7 @@ const CancelButton = ({beatState, beatDispatch}) => {
 
 const ClearButton = ({beatState, beatDispatch}) => {
   return (
-    <div className='clearButton__container'>
+    <div className='clearButton synthBeatOverlay__button'>
       <div className='clearButton__text'>
       </div>
       <div className='clearButton__checkBox'>
