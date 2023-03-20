@@ -2,4 +2,11 @@
   display: flex;
   align-items: center;
   gap: 1em;
+
+  &-button {
+    width: 16px;
+    height: 24px;
+
+    position: relative;
+  }
 }

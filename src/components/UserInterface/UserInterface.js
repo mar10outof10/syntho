@@ -7,9 +7,15 @@ const UserInterface = () => {
   return (
     <div className="userInterface">
       <div className="userInterface__container">
-        <PlayButton/>
-        <TempoDisplay/>
-        <TrackList/>
+        <div className="userInterface__playContainer">
+          <PlayButton/>
+        </div>
+        <div className="userInterface__tempoContainer">
+          <TempoDisplay/>
+        </div>
+        <div className="userInterface__trackContainer">
+          <TrackList/>
+        </div>
       </div>
     </div>
   )

@@ -46,18 +46,54 @@ html {
 .triangle-right {
   width: 0;
   height: 0;
+  position: relative;
+  box-sizing: content-box;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid black;
+  border-top: 16px solid transparent;
+  transform-style: preserve-3d;
+}
+.triangle-right:active {
+  border-left-color: lightgrey;
+}
+.triangle-right:hover:after {
+  content: "";
+  position: absolute;
+  transform: translateZ(-1px);
+  left: -18px;
+  top: -20px;
+  width: 0;
+  height: 0;
   box-sizing: content-box;
   border-bottom: 20px solid transparent;
-  border-left: 20px solid black;
+  border-left: 20px solid white;
   border-top: 20px solid transparent;
 }
 
 .triangle-left {
   width: 0;
   height: 0;
+  position: relative;
+  box-sizing: content-box;
+  border-bottom: 16px solid transparent;
+  border-right: 16px solid black;
+  border-top: 16px solid transparent;
+  transform-style: preserve-3d;
+}
+.triangle-left:active {
+  border-right-color: lightgrey;
+}
+.triangle-left:hover:after {
+  content: "";
+  position: absolute;
+  transform: translateZ(-1px);
+  right: -18px;
+  top: -20px;
+  width: 0;
+  height: 0;
   box-sizing: content-box;
   border-bottom: 20px solid transparent;
-  border-right: 20px solid black;
+  border-right: 20px solid white;
   border-top: 20px solid transparent;
 }
 
@@ -259,6 +295,11 @@ html {
   align-items: center;
   gap: 1em;
 }
+.playButton-button {
+  width: 16px;
+  height: 24px;
+  position: relative;
+}
 
 .tempoDisplay {
   display: flex;
@@ -296,6 +337,10 @@ html {
   justify-content: space-around;
   align-items: center;
   margin: 5% 0;
+}
+.userInterface__tempoContainer {
+  display: flex;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
