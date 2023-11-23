@@ -3,4 +3,14 @@
   width: 100%;
   justify-content: space-around;
   align-items: center;
+
+  &__tempoContainer {
+    height: 32px;
+    width: auto;
+  }
+
+  &__arrowContainer {
+    width: 16px;
+    height: 24px;
+  }
 }

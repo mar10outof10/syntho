@@ -1,11 +1,19 @@
 import React from "react";
+import {ReactComponent as TriangleRight} from "assets/triangleRight.svg";
+import {ReactComponent as TriangleLeft} from "assets/triangleLeft.svg";
 
 const TempoDisplay = () => {
   return (
     <div className="tempoDisplay">
-      <div className="triangle-left"></div>
-      <div className="tempoDisplay__digital"></div>
-      <div className="triangle-right"></div>
+      <div className="tempoDisplay__arrowContainer">
+        <TriangleLeft />
+      </div>
+      <div className="tempoDisplay__tempoContainer">
+        
+      </div>
+      <div className="tempoDisplay__arrowContainer">
+        <TriangleRight />
+      </div>
     </div>
   )
 }

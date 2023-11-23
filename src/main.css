@@ -306,6 +306,14 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+.tempoDisplay__tempoContainer {
+  height: 32px;
+  width: auto;
+}
+.tempoDisplay__arrowContainer {
+  width: 16px;
+  height: 24px;
+}
 
 .trackList {
   display: grid;
