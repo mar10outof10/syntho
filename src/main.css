@@ -296,9 +296,8 @@ html {
   gap: 1em;
 }
 .playButton-button {
-  width: 16px;
-  height: 24px;
-  position: relative;
+  width: 32px;
+  height: 48px;
 }
 
 .tempoDisplay {
