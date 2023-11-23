@@ -1,9 +1,10 @@
 import React from "react";
+import {ReactComponent as TriangleRight} from "assets/triangleRight.svg";
 
 const PlayButton = () => {
   return (
     <div className="playButton">
-      PLAY! <div className="playButton__triangle triangle-right"></div>
+      PLAY! <TriangleRight className="playButton-button" />
     </div>
   )
 }
